@@ -28,4 +28,12 @@ pipeline {
             }
         }
     }
+    post {
+        always{
+            echo 'post always'
+        }
+        failure{
+            echo 'post failure'
+        }
+    }
 }
